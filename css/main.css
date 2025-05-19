@@ -197,7 +197,6 @@ ol {
 }
 
 .services--link {
-
     background-color: white;
     color: rgba(69, 143, 246, 1);
 }
@@ -412,7 +411,27 @@ ol {
 .benefist-item:nth-child(even) {
     flex-direction: row-reverse;
 }
-
+.benefist-link{
+    position: relative;
+    background-color: white;
+    color: rgba(69, 143, 246, 1);
+}
+.benefist-link::after{
+    position: absolute;
+    width: 9px;
+    height: 15px;
+    content: '';
+    right: 19px;
+    top: 16px;
+    background-image: url(../img/vector.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.benefist-link:hover{
+    background-color: rgba(69, 143, 246, 1);
+    color: white;
+    transition: 800ms;
+}
 .benefist-item-content {
     width: 450px;
 }
